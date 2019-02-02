@@ -1,11 +1,40 @@
 body {
   font-family: 'Chivo', sans-serif;
   font-size: 14px;
+    overflow: hidden;
 }
 
 h1 {
-  font-size: 10.5em;
+  font-size: 15vh;
   font-weight: normal;
-  line-height: 0.75em;
+  line-height: .25em;
   text-align:center;
+}
+
+.subject {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin:auto;
+}
+
+div a {
+  font-size: 1.2rem;
+}
+
+a.top-right {
+  position:fixed;
+  right: 5%;
+  top: 5%;
+  transform: rotate(90deg) translate(100%, 0);
+  transform-origin: 100% 0;
+}
+
+a.bottom-left {
+  position:fixed;
+  left: 5%;
+  bottom: 5%;
+  transform: rotate(-90deg) ;
+  transform-origin: 0 0;
 }
