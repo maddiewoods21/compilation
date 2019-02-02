@@ -1,0 +1,11 @@
+body {
+  font-family: 'Chivo', sans-serif;
+  font-size: 14px;
+}
+
+h1 {
+  font-size: 10.5em;
+  font-weight: normal;
+  line-height: 0.75em;
+  text-align:center;
+}
