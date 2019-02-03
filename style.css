@@ -116,7 +116,7 @@ width:100vw;
 display:inline-block;
 }
 
-section.projects , section.bio {
+section.projects {
   position: fixed;
   top: 25vh;
   margin-right: 18vw;
@@ -144,14 +144,26 @@ section.projects , section.bio {
   font-weight: 500;
 }
 
-.bio div  {
+section.bio {
+  position: fixed;
+  top: 25vh;
+  margin-right: 18vw;
+  margin-left: 5%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-direction: row;
+  /* background-color: blue; */
+}
+
+.bio div.info  {
   width:40vw;
-  margin-right: 3vw;
 
 }
 
-.bio img {
-    width:20vw;
+.bio div img {
+    width:30vw;
+    margin-right: 3vw;
 }
 
 .bio h3 {
