@@ -3,7 +3,22 @@ body {
   font-size: 16px;
   line-height: 1.4;
   overflow-x: hidden;
-  overflow-y: auto;
+}
+
+body.special-height {
+  font-family: 'Chivo', sans-serif;
+  font-size: 16px;
+  line-height: 1.4;
+  overflow-x: scroll;
+  height: 220vh;
+}
+
+body.extra-special-height {
+  font-family: 'Chivo', sans-serif;
+  font-size: 16px;
+  line-height: 1.4;
+  overflow-x: scroll;
+  height: 520vh;
 }
 
 header {
@@ -131,7 +146,7 @@ section.projects {
 }
 
 .projects div, .projects img {
-  width:18vw;
+  width:20vw;
   margin-right: 1.5vw;
 }
 
@@ -175,7 +190,7 @@ section.bio {
 
 main {
   height: 79vh;
-  border-bottom: 1px solid black;
+  /* border-bottom: 1px solid black; */
 }
 
 .sliders {
@@ -195,6 +210,10 @@ main {
     border-bottom: 1px solid black;
 }
 
+.sliders div:first-child {
+  border-top: 1px solid black;
+}
+
 .sliders div h4 {
   width: 100vw;
   text-align: center;
@@ -207,5 +226,95 @@ main {
   color: black;
 }
 
-.e {
+div.exercises {
+  position: fixed;
+  top: 25vh;
+  left: 0;
+  margin-right: 18vw;
+  margin-left: 5%;
+  /* margin-top: 20vh; */
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: row;
+
+  width: 220vh;
+}
+
+.exercises div, .exercises img {
+  width:20vw;
+  margin-right: 1.5vw;
+}
+
+.exercises div:last-child , .exercises img:last-child {
+  margin-right: 10vw;
+}
+
+.projects h3, .exercises h3 {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+div.responses {
+
+  position: fixed;
+  top: 25vh;
+  left: 0;
+  margin-left: 5%;
+  width: 350vw;
+  height: 45vh;
+  display: grid;
+  grid-template-rows: 10% 90%;
+  grid-template-columns: repeat(12, 25vw);
+  gap: 0px 20px;
+}
+
+
+p.last {
+margin-right: 40px;
+}
+
+
+.header-one {
+  grid-row: 1;
+  grid-column: 1 / span 3;
+  align-self: start;
+
+}
+
+.header-two {
+  grid-row: 1;
+  grid-column: 4/ span 3;
+  align-self: start;
+}
+
+.header-three {
+  grid-row: 1;
+  grid-column: 7/ span 3;
+  align-self: start;
+}
+
+.header-four {
+  grid-row: 1;
+  grid-column: 10 / span 3;
+  align-self: start;
+}
+
+.responses h3 {
+  font-size: 28px;
+  font-weight: 500;
+  margin: 0;
+}
+
+.responses h3 em {
+  font-size: 28px;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.responses p a {
+  font-size: 16px;
+  line-height: 1.4;
+  font-style: italic;
 }
