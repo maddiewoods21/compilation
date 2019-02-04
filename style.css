@@ -46,6 +46,7 @@ header h2 {
   line-height: 1;
   font-weight: 400;
   margin: 0 auto 0 auto;
+  padding-bottom: 50px;
 }
 
 .subject {
@@ -131,7 +132,7 @@ a.top-right {
   top: 5%;
   transform: rotate(90deg) translate(100%, 0);
   transform-origin: 100% 0;
-  z-index:5;
+  z-index:1;
   font-size: 1.2rem;
   text-decoration: none;
   color:#F1EFEC;
@@ -143,7 +144,7 @@ a.bottom-left {
   bottom: 10px;
   transform: rotate(-90deg) ;
   transform-origin: 0 0;
-  z-index:5;
+  z-index:1;
   font-size: 1.2rem;
   text-decoration: none;
   color:#F1EFEC;
@@ -656,6 +657,8 @@ p.first {
 .exercise-header h2 , .projects-header h2 , header h2 , .reading-header {
     font-size: 30px;
   }
+
+
   .sliders div h4 a {
     font-size: 28px;
   }
@@ -667,6 +670,8 @@ p.first {
   .sliders div {
     height: 8vh;
   }
+
+
 
   div.bio {
     margin-right: 20vw;
@@ -794,5 +799,8 @@ p.first {
   font-size: 14px;
 }
 
+.sliders {
+  bottom: 25px;
+}
 
 }
