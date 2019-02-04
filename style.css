@@ -146,7 +146,7 @@ a.bottom-left {
 }
 
 
-section.projects {
+div.projects {
   position: fixed;
   top: 25vh;
   margin-right: 18vw;
@@ -164,6 +164,7 @@ section.projects {
   width: 18vw;
   margin-right: 1.5vw;
 }
+
 .projects div:last-child , .projects img:last-child {
   margin-right: 0;
 }
@@ -177,7 +178,7 @@ section.projects {
   font-weight: 500;
 }
 
-section.bio {
+div.bio {
   position: fixed;
   top: 25vh;
   margin-right: 18vw;
@@ -264,13 +265,11 @@ div.exercises {
   left: 0;
   margin-right: 18vw;
   margin-left: 5%;
-  /* margin-top: 20vh; */
   display: flex;
   flex-wrap: nowrap;
   align-items: flex-start;
   justify-content: flex-start;
   flex-direction: row;
-  width: 220vh;
 }
 
 .exercises div, .exercises img {
@@ -365,20 +364,64 @@ p.first {
 
 @media (max-width: 1100px) {
 
-  .projects h3 {
-    font-size: 22px;
-    font-weight: 500;
+  p {
+    font-size:15px;
+  }
+
+  a.top-left img {
+  width: 2.5%;
+  }
+
+  body.special-height {
+    height: 200vw;
   }
 
   body {
-    font-size:15px;
+    overflow-x: scroll;
+    height: 102vw;
   }
-  .projects div ,
 
-  .projects img {
+  .projects div , .projects img {
     width: 22vw;
-    margin-right: 1.2vw;
+    margin-right: 2vw;
   }
+
+  div.exercises , div.projects , div.bio {
+    top: 18vh;
+  }
+
+  .exercises div, .exercises img {
+    width: 22vw;
+    margin-right: 2vw;
+  }
+
+  .exercises div:last-child , .exercises img:last-child {
+    margin-right: 10vw;
+  }
+
+  .exercises h3 , .projects h3{
+    font-size: 24px;
+  }
+  .exercise-header h2 , .projects-header h2 {
+    font-size: 48px;
+  }
+  .sliders div h4 a {
+    font-size: 36px;
+  }
+
+  main {
+    height: 76vh;
+  }
+
+  .sliders div {
+    height: 8vh;
+  }
+
+  .bio div.info  {
+    width:55vw;
+  }
+
+
 }
 
 @media (max-width: 800px) {
@@ -388,7 +431,69 @@ p.first {
     line-height: 2;
   }
 
+  a.top-left img {
+  width: 3.5%;
+  }
+
+  body.special-height {
+    height: 350vw;
+  }
+
+  body {
+    overflow-x: scroll;
+    height: 250vw;
+  }
+
+  .projects div , .projects img {
+    width: 35vw;
+    margin-right: 4vw;
+  }
+
+  .exercises div, .exercises img {
+    width: 35vw;
+    margin-right: 4vw;
+  }
+
+  div.exercises , div.projects , div.bio {
+    top: 16vh;
+  }
+
+  div.bio {
+    margin-right: 20vw;
+    margin-left: 10%;
+    display: block;
+  }
+
+  .bio div.info  {
+    width:80vw;
+  }
+
+  .bio div img {
+      display:none;
+  }
+
+  .exercises h3 , .projects h3 {
+    font-size: 24px;
+  }
+
+  .exercise-header h2 , .projects-header h2 {
+    font-size: 32px;
+  }
+
+  .sliders div h4 a {
+    font-size: 32px;
+  }
+
+  main {
+    height: 76vh;
+  }
+
+  .sliders div {
+    height: 8vh;
+  }
+
 }
+
 
 @media (max-width: 625px) {
 
@@ -397,13 +502,221 @@ p.first {
     line-height: 2.5;
   }
 
+    body.special-height {
+      height: 450vw;
+    }
+
+    body {
+      overflow-x: scroll;
+      height: 250vw;
+    }
+
+    .projects div , .projects img {
+      width: 38vw;
+      margin-right: 3vw;
+    }
+
+    a.top-left img {
+    width: 4%;
+    }
+
+    .exercises div, .exercises img {
+      width: 38vw;
+      margin-right: 3vw;
+    }
+
+    .exercises div:last-child , .exercises img:last-child {
+      margin-right: 10vw;
+    }
+
+    div.exercises , div.projects , div.bio {
+      top: 18vh;
+    }
+
+    div.bio {
+      margin-right: 20vw;
+      margin-left: 10%;
+      display: block;
+    }
+
+    .bio div.info  {
+      width:80vw;
+    }
+
+    .bio div img {
+        display:none;
+    }
+
+  .exercises h3 , .projects h3 {
+    font-size: 20px;
+  }
+
+  .exercise-header h2 , .projects-header h2 {
+    font-size: 32px;
+  }
+
+  .sliders div h4 a {
+    font-size: 30px;
+  }
+
+  main {
+    height: 76vh;
+  }
+
+  .sliders div {
+    height: 8vh;
+  }
+
+
 }
 
-@media (max-width: 400px) {
+@media (max-width: 500px) {
 
   a.top-right ,
   a.bottom-left {
     opacity:0;
   }
+
+  .subject a {
+    font-size: 8vh;
+    line-height: 3.5;
+  }
+
+  a.top-left img {
+  width: 5%;
+  }
+
+  body.special-height {
+    height: 450vw;
+  }
+
+  body {
+    overflow-x: scroll;
+    height: 300vw;
+  }
+
+  .projects div , .projects img {
+    width: 39vw;
+    margin-right: 3vw;
+  }
+
+  .exercises div, .exercises img {
+    width: 25vh;
+    margin-right: 3vw;
+  }
+
+  div.exercises , div.projects , div.bio {
+    top: 16vh;
+  }
+
+  .exercises h3 , .bio h3 {
+    font-size: 22px;
+  }
+.exercise-header h2 , .projects-header h2 , header h2  {
+    font-size: 32px;
+  }
+  .sliders div h4 a {
+    font-size: 28px;
+  }
+
+  main {
+    height: 76vh;
+  }
+
+  .sliders div {
+    height: 8vh;
+  }
+
+  div.bio {
+    margin-right: 20vw;
+    margin-left: 10%;
+    display: block;
+  }
+
+  .bio div.info  {
+    width:80vw;
+  }
+
+  .bio div img {
+      display:none;
+  }
+
+}
+
+@media (max-width: 405px) {
+
+
+  body.special-height {
+    height: 650vw;
+  }
+
+  body {
+    overflow-x: scroll;
+    height: 400vw;
+  }
+
+  a.top-right ,
+  a.bottom-left {
+    opacity:0;
+  }
+
+  .subject a {
+    font-size: 5vh;
+    line-height: 5;
+  }
+
+  a.top-left img {
+  width: 6%;
+  }
+
+  .exercise-header h2 , .projects-header h2 , header h2  {
+    font-size: 32px;
+    line-height: 1;
+  }
+
+  .exercises div , .exercises div img {
+    width: 30vh;
+    margin-right: 3vw;
+  }
+
+  .projects div , .projects img {
+    width: 59vw;
+    margin-right: 3vw;
+  }
+
+  .projects div p , .exercises div p {
+  display:none;
+  }
+
+  main {
+    height: 70vh;
+  }
+
+  .sliders div {
+    height: 10vh;
+  }
+
+  .sliders div h4 a {
+    font-size: 24px;
+}
+
+  div.exercises , div.projects , div.bio {
+    top: 18vh;
+  }
+
+  div.bio {
+    margin-right: 20vw;
+    margin-left: 10%;
+    display: block;
+  }
+
+  .bio div.info  {
+    width:80vw;
+  }
+
+  .bio div img , .bio div p {
+      display:none;
+  }
+
 
 }
