@@ -1,7 +1,7 @@
 /* #630C45 purple
 #132657 blue
 #102F11 green
-#C0BCB3 beige
+#DEDAD1 beige
 #F1EFEC off-white
  */
 
@@ -9,7 +9,7 @@ body {
   font-family: 'Chivo', sans-serif;
   font-size: 16px;
   color: #363738;
-  background-color: #C0BCB3;
+  background-color: #DEDAD1;
   line-height: 1.45;
   overflow-x: hidden;
 }
@@ -18,7 +18,7 @@ body.special-height {
   font-family: 'Chivo', sans-serif;
   font-size: 16px;
   line-height: 1.4;
-  background-color: #C0BCB3;
+  background-color: #DEDAD1;
   overflow-x: scroll;
   height: 220vh;
 }
@@ -26,10 +26,10 @@ body.special-height {
 body.extra-special-height {
   font-family: 'Chivo', sans-serif;
   font-size: 16px;
-  background-color: #C0BCB3;
+  background-color: #DEDAD1;
   line-height: 1.4;
   overflow-x: scroll;
-  height: 520vh;
+  height: 420vw;
 }
 
 header {
@@ -60,6 +60,7 @@ header h2 {
   width: 100vw;
   text-align: center;
   box-shadow: 0 -5px 5px -5px rgba(0, 0, 0, 0.3);
+
 }
 
 .subject a {
@@ -70,8 +71,11 @@ header h2 {
   display: block;
   width: 100vw;
   height: 25vh;
-  background-color: #C0BCB3;
+  background-color: #DEDAD1;
   line-height: 1.6;
+  position: fixed;
+  box-shadow: 0 -5px 5px -5px rgba(0, 0, 0, 0.3);
+  border-bottom: 1px solid black;
 }
 
 .subject a:hover {
@@ -83,7 +87,7 @@ header h2 {
 }
 
 .project a:hover {
-  color: #C0BCB3;
+  color: #DEDAD1;
   background-color: #630C45;
 }
 
@@ -92,7 +96,7 @@ header h2 {
 }
 
 .exercise a:hover {
-  color: #C0BCB3;
+  color: #DEDAD1;
   background-color: #132657;
 }
 
@@ -101,7 +105,7 @@ header h2 {
 }
 
 .reading a:hover {
-  color: #C0BCB3;
+  color: #DEDAD1;
   background-color: #102F11;
 }
 
@@ -110,7 +114,7 @@ header h2 {
 }
 
 .about a:hover {
-  color: #C0BCB3;
+  color: #DEDAD1;
   background-color: #363738;
 }
 
@@ -206,7 +210,7 @@ div.bio {
 
 main {
   height: 79vh;
-  background-color: #C0BCB3;
+  background-color: #DEDAD1;
   overflow: hidden;
 }
 
@@ -240,7 +244,7 @@ main {
   font-size: 32px;
   font-weight: 400;
   text-decoration: none;
-  color: #C0BCB3;
+  color: #DEDAD1;
 }
 
 .sliders div.e {
@@ -297,11 +301,10 @@ div.responses {
   top: 25vh;
   left: 0;
   margin-left: 5%;
-  width: 350vw;
   height: 45vh;
   display: grid;
   grid-template-rows: 10% 90%;
-  grid-template-columns: repeat(12, 25vw);
+  grid-template-columns: repeat(12, 28vw);
   gap: 0px 20px;
 }
 
@@ -358,7 +361,6 @@ p.first {
   font-size: 16px;
   line-height: 1.4;
   font-style: italic;
-  /* color: #102F11; */
 }
 
 
@@ -386,7 +388,7 @@ p.first {
     margin-right: 2vw;
   }
 
-  div.exercises , div.projects , div.bio {
+  div.exercises , div.projects , div.bio , div.responses {
     top: 18vh;
   }
 
@@ -399,10 +401,10 @@ p.first {
     margin-right: 10vw;
   }
 
-  .exercises h3 , .projects h3{
+  .exercises h3 , .projects h3 , .responses h3 , .responses h3 em {
     font-size: 24px;
   }
-  .exercise-header h2 , .projects-header h2 {
+  .exercise-header h2 , .projects-header h2 , .reading-header  {
     font-size: 48px;
   }
   .sliders div h4 a {
@@ -420,6 +422,28 @@ p.first {
   .bio div.info  {
     width:55vw;
   }
+
+  body.extra-special-height {
+    overflow-x: scroll;
+    height: 800vh;
+  }
+
+  div.responses {
+    height: 30vh;
+    grid-template-rows: 10% 90%;
+    grid-template-columns: repeat(12, 40vh);
+    gap: 2vh 3vh;
+  }
+
+  .middle , .first , .last , .first a {
+    font-size: 15px;
+  }
+
+  .responses .first a , .responses .last a {
+  font-size: 15px;
+}
+
+
 
 
 }
@@ -454,7 +478,7 @@ p.first {
     margin-right: 4vw;
   }
 
-  div.exercises , div.projects , div.bio {
+  div.exercises , div.projects , div.bio , div.responses {
     top: 16vh;
   }
 
@@ -472,11 +496,11 @@ p.first {
       display:none;
   }
 
-  .exercises h3 , .projects h3 {
+  .exercises h3 , .projects h3 , .responses h3 , .responses h3 em {
     font-size: 24px;
   }
 
-  .exercise-header h2 , .projects-header h2 {
+  .exercise-header h2 , .projects-header h2 , .reading-header {
     font-size: 32px;
   }
 
@@ -491,6 +515,15 @@ p.first {
   .sliders div {
     height: 8vh;
   }
+
+  .middle , .first , .last , .first a {
+    font-size: 15px;
+  }
+
+  .responses .first a , .responses .last a {
+  font-size: 15px;
+}
+
 
 }
 
@@ -529,7 +562,7 @@ p.first {
       margin-right: 10vw;
     }
 
-    div.exercises , div.projects , div.bio {
+    div.exercises , div.projects , div.bio , div.responses {
       top: 18vh;
     }
 
@@ -547,11 +580,11 @@ p.first {
         display:none;
     }
 
-  .exercises h3 , .projects h3 {
+  .exercises h3 , .projects h3 , .responses h3 , .responses h3 em {
     font-size: 20px;
   }
 
-  .exercise-header h2 , .projects-header h2 {
+  .exercise-header h2 , .projects-header h2 , .reading-header , header h2 {
     font-size: 32px;
   }
 
@@ -567,6 +600,14 @@ p.first {
     height: 8vh;
   }
 
+  .middle , .first , .last , .first a {
+    font-size: 15px;
+  }
+
+  .responses .first a , .responses .last a {
+  font-size: 15px;
+}
+
 
 }
 
@@ -579,7 +620,7 @@ p.first {
 
   .subject a {
     font-size: 8vh;
-    line-height: 3.5;
+    line-height: 3;
   }
 
   a.top-left img {
@@ -605,15 +646,15 @@ p.first {
     margin-right: 3vw;
   }
 
-  div.exercises , div.projects , div.bio {
+  div.exercises , div.projects , div.bio , div.responses {
     top: 16vh;
   }
 
-  .exercises h3 , .bio h3 {
+  .exercises h3 , .bio h3 , .responses h3 , .responses h3 em {
     font-size: 22px;
   }
-.exercise-header h2 , .projects-header h2 , header h2  {
-    font-size: 32px;
+.exercise-header h2 , .projects-header h2 , header h2 , .reading-header {
+    font-size: 30px;
   }
   .sliders div h4 a {
     font-size: 28px;
@@ -641,6 +682,27 @@ p.first {
       display:none;
   }
 
+  body.extra-special-height {
+    height: 1200vh;
+  }
+
+  div.responses {
+    height: 30vh;
+    grid-template-rows: 10% 90%;
+    grid-template-columns: repeat(12, 65vh);
+    gap: 2vh 3vh;
+  }
+
+  .middle , .first , .last , .first a {
+    font-size: 15px;
+  }
+
+  .responses .first a , .responses .last a {
+  font-size: 15px;
+}
+
+
+
 }
 
 @media only screen and (max-width: 405px) {
@@ -658,11 +720,6 @@ p.first {
   a.top-right ,
   a.bottom-left {
     opacity:0;
-  }
-
-  .subject a {
-    font-size: 5vh;
-    line-height: 5;
   }
 
   a.top-left img {
@@ -700,8 +757,8 @@ p.first {
     font-size: 24px;
 }
 
-  div.exercises , div.projects , div.bio {
-    top: 18vh;
+  div.exercises , div.projects , div.bio , div.responses {
+    top: 16vh;
   }
 
   div.bio {
@@ -717,6 +774,25 @@ p.first {
   .bio div img , .bio div p {
       display:none;
   }
+
+  body.extra-special-height {
+    height: 1500vw;
+  }
+
+  div.responses {
+    height: 30vh;
+    grid-template-rows: 10% 90%;
+    grid-template-columns: repeat(12, 90vw);
+    gap: 2vh 3vh;
+  }
+
+  .middle , .first , .last , .first a {
+    font-size: 14px;
+  }
+
+  .responses .first a , .responses .last a {
+  font-size: 14px;
+}
 
 
 }
