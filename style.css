@@ -660,15 +660,15 @@ p.first {
 
 
   .sliders div h4 a {
-    font-size: 28px;
+    font-size: 24px;
   }
 
   main {
-    height: 76vh;
+    height: 79vh;
   }
 
   .sliders div {
-    height: 8vh;
+    height: 7vh;
   }
 
 
@@ -751,11 +751,11 @@ p.first {
   }
 
   main {
-    height: 70vh;
+    height: 79vh;
   }
 
   .sliders div {
-    height: 10vh;
+    height: 7vh;
   }
 
   .sliders div h4 a {
