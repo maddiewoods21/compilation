@@ -1,7 +1,7 @@
 /* #630C45 purple
 #132657 blue
 #102F11 green
-#DEDAD1 beige
+#DEDDDD beige
 #F1EFEC off-white
  */
 
@@ -9,7 +9,7 @@ body {
   font-family: 'Chivo', sans-serif;
   font-size: 16px;
   color: #363738;
-  background-color: #DEDAD1;
+  background-color: #DEDDDD;
   line-height: 1.45;
   overflow-x: hidden;
 }
@@ -18,7 +18,7 @@ body.special-height {
   font-family: 'Chivo', sans-serif;
   font-size: 16px;
   line-height: 1.4;
-  background-color: #DEDAD1;
+  background-color: #DEDDDD;
   overflow-x: scroll;
   height: 220vh;
 }
@@ -26,7 +26,7 @@ body.special-height {
 body.extra-special-height {
   font-family: 'Chivo', sans-serif;
   font-size: 16px;
-  background-color: #DEDAD1;
+  background-color: #DEDDDD;
   line-height: 1.4;
   overflow-x: scroll;
   height: 420vw;
@@ -72,7 +72,7 @@ header h2 {
   display: block;
   width: 100vw;
   height: 25vh;
-  background-color: #DEDAD1;
+  background-color: #DEDDDD;
   line-height: 1.6;
   position: fixed;
   box-shadow: 0 -5px 5px -5px rgba(0, 0, 0, 0.3);
@@ -88,7 +88,7 @@ header h2 {
 }
 
 .project a:hover {
-  color: #DEDAD1;
+  color: #DEDDDD;
   background-color: #630C45;
 }
 
@@ -97,7 +97,7 @@ header h2 {
 }
 
 .exercise a:hover {
-  color: #DEDAD1;
+  color: #DEDDDD;
   background-color: #132657;
 }
 
@@ -106,7 +106,7 @@ header h2 {
 }
 
 .reading a:hover {
-  color: #DEDAD1;
+  color: #DEDDDD;
   background-color: #102F11;
 }
 
@@ -115,7 +115,7 @@ header h2 {
 }
 
 .about a:hover {
-  color: #DEDAD1;
+  color: #DEDDDD;
   background-color: #363738;
 }
 
@@ -211,7 +211,7 @@ div.bio {
 
 main {
   height: 79vh;
-  background-color: #DEDAD1;
+  background-color: #DEDDDD;
   overflow: hidden;
 }
 
@@ -245,7 +245,7 @@ main {
   font-size: 32px;
   font-weight: 400;
   text-decoration: none;
-  color: #DEDAD1;
+  color: #DEDDDD;
 }
 
 .sliders div.e {
