@@ -1,7 +1,16 @@
+/* #630C45 purple
+#132657 blue
+#102F11 green
+#C0BCB3 beige
+#F1EFEC off-white
+ */
+
 body {
   font-family: 'Chivo', sans-serif;
   font-size: 16px;
-  line-height: 1.4;
+  color: #363738;
+  background-color: #C0BCB3;
+  line-height: 1.45;
   overflow-x: hidden;
 }
 
@@ -9,6 +18,7 @@ body.special-height {
   font-family: 'Chivo', sans-serif;
   font-size: 16px;
   line-height: 1.4;
+  background-color: #C0BCB3;
   overflow-x: scroll;
   height: 220vh;
 }
@@ -16,6 +26,7 @@ body.special-height {
 body.extra-special-height {
   font-family: 'Chivo', sans-serif;
   font-size: 16px;
+  background-color: #C0BCB3;
   line-height: 1.4;
   overflow-x: scroll;
   height: 520vh;
@@ -32,42 +43,75 @@ header {
 
 header h2 {
   font-size: 56px;
+  line-height: 1;
   font-weight: 400;
   margin: 0 auto 0 auto;
-}
-
-h1 {
-  font-size: 15vh;
-  font-weight: normal;
-  line-height: .25em;
-  text-align:center;
-}
-
-div h1 a {
-    font-size: 15vh;
-    font-weight: normal;
-    line-height: .25em;
-    text-align:center;
-    transition: letter-spacing 0.3s ease-in;
-    text-decoration: none;
-    color:black;
-}
-
-div h1 a:hover {
-  letter-spacing: 1rem;
-
 }
 
 .subject {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  margin:auto;
+  align-items: center;
 }
 
-div a {
-  font-size: 1.2rem;
+.subject div {
+  height: 25vh;
+  width: 100vw;
+  text-align: center;
+  box-shadow: 0 -5px 5px -5px rgba(0, 0, 0, 0.3);
+}
+
+.subject a {
+  font-size: 15vh;
+  font-weight: 200;
+  transition: letter-spacing 0.2s ease-in;
+  text-decoration: none;
+  display: block;
+  width: 100vw;
+  height: 25vh;
+  background-color: #C0BCB3;
+  line-height: 1.6;
+}
+
+.subject a:hover {
+  letter-spacing: .2rem;
+}
+
+.project a {
+  color: #630C45;
+}
+
+.project a:hover {
+  color: #C0BCB3;
+  background-color: #630C45;
+}
+
+.exercise  a {
+  color: #132657;
+}
+
+.exercise a:hover {
+  color: #C0BCB3;
+  background-color: #132657;
+}
+
+.reading a {
+  color: #102F11;
+}
+
+.reading a:hover {
+  color: #C0BCB3;
+  background-color: #102F11;
+}
+
+.about a {
+  color: #363738;
+}
+
+.about a:hover {
+  color: #C0BCB3;
+  background-color: #363738;
 }
 
 a.top-left img {
@@ -84,6 +128,9 @@ a.top-right {
   transform: rotate(90deg) translate(100%, 0);
   transform-origin: 100% 0;
   z-index:5;
+  font-size: 1.2rem;
+  text-decoration: none;
+  color:#F1EFEC;
 }
 
 a.bottom-left {
@@ -93,65 +140,36 @@ a.bottom-left {
   transform: rotate(-90deg) ;
   transform-origin: 0 0;
   z-index:5;
+  font-size: 1.2rem;
+  text-decoration: none;
+  color:#F1EFEC;
 }
 
-.random {
-  width:100vw;
-  height: 25vh;
-  border-bottom: 1px solid black;
-}
-
-.project {
-/* background-color: red; */
-width:100vw;
-height: 25vh;
-z-index:1;
-}
-
-.exercise {
-box-shadow: 0 -5px 5px -5px rgba(0, 0, 0, 0.3);
-z-index:2;
-width:100vw;
-display:inline-block;
-
-}
-
-.reading {
-box-shadow: 0 -5px 5px -5px rgba(0, 0, 0, 0.3);
-z-index:3;
-width:100vw;
-display:inline-block;
-
-}
-
-.about {
-box-shadow: 0 -5px 5px -5px rgba(0, 0, 0, 0.3);
-z-index:4;
-width:100vw;
-display:inline-block;
-}
 
 section.projects {
   position: fixed;
   top: 25vh;
   margin-right: 18vw;
   margin-left: 5%;
-  /* margin-top: 20vh; */
   display: flex;
   flex-wrap: nowrap;
   align-items: flex-start;
   justify-content: space-between;
   flex-direction: row;
-  /* background-color: blue; */
 }
 
-.projects div, .projects img {
-  width:20vw;
+.projects div ,
+
+.projects img {
+  width: 18vw;
   margin-right: 1.5vw;
 }
-
 .projects div:last-child , .projects img:last-child {
   margin-right: 0;
+}
+
+.projects-header h2, .projects h3, .projects p {
+  color: #630C45 ;
 }
 
 .projects h3 {
@@ -168,16 +186,14 @@ section.bio {
   align-items: flex-start;
   justify-content: space-between;
   flex-direction: row;
-  /* background-color: blue; */
 }
 
 .bio div.info  {
   width:40vw;
-
 }
 
 .bio div img {
-    width:30vw;
+    width:25vw;
     margin-right: 3vw;
 }
 
@@ -187,10 +203,10 @@ section.bio {
   margin-top: -5px;
 }
 
-
 main {
   height: 79vh;
-  /* border-bottom: 1px solid black; */
+  background-color: #C0BCB3;
+  overflow: hidden;
 }
 
 .sliders {
@@ -223,7 +239,23 @@ main {
   font-size: 32px;
   font-weight: 400;
   text-decoration: none;
-  color: black;
+  color: #C0BCB3;
+}
+
+.sliders div.e {
+  background-color: #132657;
+}
+
+.sliders div.r {
+  background-color: #102F11 ;
+}
+
+.sliders div.a {
+  background-color: #363738;
+}
+
+.sliders div.p {
+  background-color: #630C45;
 }
 
 div.exercises {
@@ -238,12 +270,11 @@ div.exercises {
   align-items: flex-start;
   justify-content: flex-start;
   flex-direction: row;
-
   width: 220vh;
 }
 
 .exercises div, .exercises img {
-  width:20vw;
+  width: 18vw;
   margin-right: 1.5vw;
 }
 
@@ -251,13 +282,18 @@ div.exercises {
   margin-right: 10vw;
 }
 
-.projects h3, .exercises h3 {
+.exercises h3 {
   font-size: 24px;
-  font-weight: 500;
+  font-weight: 400;
+  color: #132657;
 }
 
-div.responses {
+.exercise-header h2 , .exercises p {
+  color: #132657;
+}
 
+
+div.responses {
   position: fixed;
   top: 25vh;
   left: 0;
@@ -270,28 +306,29 @@ div.responses {
   gap: 0px 20px;
 }
 
-
 p.last {
 margin-right: 40px;
 }
 
+p.first {
+  margin-left: 20px;
+}
 
 .header-one {
   grid-row: 1;
   grid-column: 1 / span 3;
   align-self: start;
-
 }
 
 .header-two {
   grid-row: 1;
-  grid-column: 4/ span 3;
+  grid-column: 4 / span 3;
   align-self: start;
 }
 
 .header-three {
   grid-row: 1;
-  grid-column: 7/ span 3;
+  grid-column: 7 / span 3;
   align-self: start;
 }
 
@@ -304,7 +341,8 @@ margin-right: 40px;
 .responses h3 {
   font-size: 28px;
   font-weight: 500;
-  margin: 0;
+  margin: 0 0 0 20px;
+  color: #102F11;
 }
 
 .responses h3 em {
@@ -313,8 +351,59 @@ margin-right: 40px;
   font-style: italic;
 }
 
+.responses p , .reading-header {
+  color: #102F11;
+}
+
 .responses p a {
   font-size: 16px;
   line-height: 1.4;
   font-style: italic;
+  /* color: #102F11; */
+}
+
+
+@media (max-width: 1100px) {
+
+  .projects h3 {
+    font-size: 22px;
+    font-weight: 500;
+  }
+
+  body {
+    font-size:15px;
+  }
+  .projects div ,
+
+  .projects img {
+    width: 22vw;
+    margin-right: 1.2vw;
+  }
+}
+
+@media (max-width: 800px) {
+
+  .subject a {
+    font-size: 12.5vh;
+    line-height: 2;
+  }
+
+}
+
+@media (max-width: 625px) {
+
+  .subject a {
+    font-size: 10vh;
+    line-height: 2.5;
+  }
+
+}
+
+@media (max-width: 400px) {
+
+  a.top-right ,
+  a.bottom-left {
+    opacity:0;
+  }
+
 }
