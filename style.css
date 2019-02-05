@@ -803,12 +803,21 @@ p.first {
   bottom: 0.25px;
 }
 
+.subject a {
+  bottom: 0.2px;
+}
 
 .subject a:last-child {
   bottom: 0.25px;
 }
 
+
 .project a {
+  color: #DEDDDD;
+  background-color: #630C45;
+}
+
+.project a:hover {
   color: #DEDDDD;
   background-color: #630C45;
 }
@@ -818,12 +827,27 @@ p.first {
   background-color: #132657;
 }
 
+.exercise a:hover {
+  color: #DEDDDD;
+  background-color: #132657;
+}
+
 .reading a {
   color: #DEDDDD;
   background-color: #102F11;
 }
 
+.reading a:hover {
+  color: #DEDDDD;
+  background-color: #102F11;
+}
+
 .about a {
+  color: #DEDDDD;
+  background-color: #363738;
+}
+
+.about a:hover {
   color: #DEDDDD;
   background-color: #363738;
 }
