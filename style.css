@@ -807,11 +807,6 @@ p.first {
   bottom: 0.2px;
 }
 
-.subject a:last-child {
-  bottom: 0.25px;
-}
-
-
 .project a {
   color: #DEDDDD;
   background-color: #630C45;
