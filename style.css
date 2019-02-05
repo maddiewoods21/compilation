@@ -800,7 +800,32 @@ p.first {
 }
 
 .sliders {
-  bottom: 0.5px;
+  bottom: 0.25px;
+}
+
+
+.subject a:last-child {
+  bottom: 0.25px;
+}
+
+.project a {
+  color: #DEDDDD;
+  background-color: #630C45;
+}
+
+.exercise  a {
+  color: #DEDDDD;
+  background-color: #132657;
+}
+
+.reading a {
+  color: #DEDDDD;
+  background-color: #102F11;
+}
+
+.about a {
+  color: #DEDDDD;
+  background-color: #363738;
 }
 
 }
