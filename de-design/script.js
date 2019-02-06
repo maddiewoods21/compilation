@@ -1,0 +1,10 @@
+$(function(){
+    $("button").on({
+        mouseover:function(){
+            $(this).css({
+                left:(Math.random()*250)+"px",
+                bottom:(Math.random()*250)+"px",
+            });
+        }
+    });
+});
