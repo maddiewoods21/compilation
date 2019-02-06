@@ -115,12 +115,12 @@ header h2 {
 }
 
 .process a {
-  color: #6B4A0B;
+  color: #A7701B;
 }
 
 .process a:hover {
   color: #DEDDDD;
-  background-color: #6B4A0B;
+  background-color: #A7701B;
 }
 
 .about a {
@@ -177,7 +177,7 @@ div.processes {
 }
 
 .process-header h2 , .processes p {
-color: #6B4A0B
+color: #A7701B
 }
 
 .process h3 {
@@ -245,7 +245,7 @@ div.bio {
 }
 
 .bio h3 {
-  font-size: 28px;
+  font-size: 32px;
   font-weight: 500;
   margin-top: -5px;
 }
@@ -255,7 +255,7 @@ div.bio {
 }
 
 main {
-  height: 79vh;
+  height: 76vh;
   background-color: #DEDDDD;
   overflow: hidden;
 }
@@ -270,27 +270,30 @@ main {
 }
 
 .sliders div {
-    height: 7vh;
+    height: 6vh;
     display: flex;
     align-items: center;
     justify-content: center;
     border-bottom: 1px solid black;
+    transition: height 0.3s;
+}
+
+.sliders div:hover {
+    height: 7vh;
 }
 
 .sliders div:first-child {
   border-top: 1px solid black;
 }
 
-.sliders div h4 {
+.sliders div h4 a {
   width: 100vw;
   text-align: center;
-}
-
-.sliders div h4 a {
-  font-size: 32px;
+  font-size: 28px;
   font-weight: 400;
   text-decoration: none;
   color: #DEDDDD;
+  display: inline-block;
 }
 
 .sliders div.e {
@@ -303,6 +306,10 @@ main {
 
 .sliders div.a {
   background-color: #363738;
+}
+
+.sliders div.pro {
+  background-color: #A7701B;
 }
 
 .sliders div.p {
@@ -454,8 +461,9 @@ p.first {
   .exercise-header h2 , .projects-header h2 , .reading-header , .process-header  {
     font-size: 48px;
   }
+
   .sliders div h4 a {
-    font-size: 36px;
+    font-size: 28px;
   }
 
   main {
@@ -463,7 +471,7 @@ p.first {
   }
 
   .sliders div {
-    height: 8vh;
+    height: 6vh;
   }
 
   .bio div.info  {
@@ -560,7 +568,7 @@ p.first {
   }
 
   .sliders div {
-    height: 8vh;
+    height: 6vh;
   }
 
   .middle , .first , .last , .first a {
@@ -636,7 +644,7 @@ p.first {
   }
 
   .sliders div h4 a {
-    font-size: 30px;
+    font-size: 28px;
   }
 
   main {
@@ -644,7 +652,7 @@ p.first {
   }
 
   .sliders div {
-    height: 8vh;
+    height: 6vh;
   }
 
   .middle , .first , .last , .first a {
@@ -710,14 +718,12 @@ p.first {
   }
 
   main {
-    height: 79vh;
+    height: 76vh;
   }
 
   .sliders div {
-    height: 7vh;
+    height: 6vh;
   }
-
-
 
   div.bio {
     margin-right: 20vw;
@@ -796,11 +802,11 @@ p.first {
   }
 
   main {
-    height: 79vh;
+    height: 76vh;
   }
 
   .sliders div {
-    height: 7vh;
+    height: 6vh;
   }
 
   .sliders div h4 a {
@@ -880,7 +886,7 @@ p.first {
 
 .process a {
   color: #DEDDDD;
-  background-color: #6B4A0B;
+  background-color: #A7701B;
 }
 
 .about a {
