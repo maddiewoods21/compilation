@@ -13,7 +13,6 @@ header {
 	left:36px;
 	color: #333333;
 	transition: color 0.25s;
-	z-index: 2;
 }
 
 header.white {
@@ -56,82 +55,50 @@ div.content {
 }
 
 .hero {
-	max-width: 65vw;
+	max-width: 600px;
 }
 
-.green div .circle {
+.mini {
+	max-width: 20vw;
+}
+
+div.square {
+	background-color: #292121;
 	position: absolute;
-	bottom: 10%;
-	right: -10%;
+	width: 75px ;
+	height: 75px;
+	bottom: 100;
+	right: 100;
 }
 
-.green div .square{
+div.circle {
+	background-color: #292121;
 	position: absolute;
-	top: -5%;
-	left: 0;
+	width: 75px ;
+	height: 75px;
+	bottom: 100;
+	right: 100;
+	border-radius: 50%;
 }
 
-.green div .triangle {
-	position: absolute;
-	bottom: -20%;
-}
 
-.green .circle img  {
-	max-width: 10vw;
-}
-
-.green .triangle img {
-	max-width: 12vw;
-}
-
-.green .square img  {
-	max-width: 24vw;
+div.content img.hero {
+	position: relative;
 }
 
 section.blue {
 	background-color: #292121;
-	height: 980px;
+	height: 940px;
 }
 
-.blue div .circle {
-	position: absolute;
-	top: -5%;
-	right: 0;
+section.blue div.circle {
+	background-color: #0C8EDE;
 }
 
-.blue div .square{
-	position: absolute;
-	bottom: 40%;
-	left: -10%;
-}
-
-.blue div .triangle {
-	position: absolute;
-	right: 20%;
-	bottom: 0%;
-}
-
-.blue div .rect {
-position: absolute;
-left: -10%;
-bottom: -10%	;
-}
-
-
-.blue .circle img  {
-	max-width: 22vw;
-}
-
-.blue .triangle img {
-	max-width: 18vw;
-}
-
-.blue .square img  {
-	max-width: 16vw;
-}
-
-.blue .rect img {
-	max-width: 22vw;
+section.blue div.square {
+	background-color: #EB731D;
+	top: 180px;
+	left: 180px;
 }
 
 section.pink {
@@ -139,118 +106,58 @@ section.pink {
 	height: 900px;
 }
 
-.pink div .circle {
-	position: absolute;
-	top: -5%;
-	left: -10%;
+section.pink div.circle {
+	background-color: #E04E94 ;
+	bottom: 200px;
+	right: 480px;
 }
 
-.pink div .square{
-	position: absolute;
-	bottom: 40%;
-	right: -10%;
+section.pink div.square {
+	background-color: #93BB51;
+	top: 120px;
+	left: 350px;
 }
-
-.pink div .triangle {
-	position: absolute;
-	right: 20%;
-	bottom: 0%;
-}
-
-.pink .circle img  {
-	max-width: 22vw;
-}
-
-.pink .triangle img {
-	max-width: 18vw;
-}
-
-.pink .square img  {
-	max-width: 16vw;
-}
-
-
 
 section.red {
 	background-color: #6e5f67;
 	height: 680px;
 }
 
+section.red div.circle {
+	background-color: #F42626;
+	bottom: 0px;
+	right: 150px;
+}
+
+section.red div.square {
+	background-color: #276145 ;
+	top: 80px;
+	left: 50px;
+}
+
 .red .hero {
-	max-width: 32vw;
+	max-width: 600px;
 }
-
-.red div .circle {
-	position: absolute;
-	top: 25%;
-	left: -75%;
-}
-
-.red div .square{
-	position: absolute;
-	bottom: 0%;
-	right: -50%;
-}
-
-.red div .triangle {
-	position: absolute;
-	right: -25%;
-	bottom: 50%;
-}
-
-.red .circle img  {
-	max-width: 16vw;
-}
-
-.red .triangle img {
-	max-width: 16vw;
-}
-
-.red .square img  {
-	max-width: 16vw;
-}
-
-.red .rect img  {
-	max-width: 16vw;
-}
-
 
 section.yellow {
 	background-color: #g3g4g2;
 	height: 600px;
 }
 
+section.yellow div.circle {
+	background-color: #F9D518 ;
+	bottom: 0px;
+	right: 200px;
+}
+
 .yellow .hero {
-	max-width: 30vw;
+	max-width: 450px;
 }
 
-.yellow div .circle {
-	position: absolute;
-	bottom: 10%;
-	right: -40%;
-}
-
-.yellow div .square{
-	position: absolute;
-	top: -20%;
-	left: -50%;
-}
-
-.yellow div .triangle {
-	position: absolute;
-	bottom: -20%;
-}
-
-.yellow .circle img  {
-	max-width: 10vw;
-}
-
-.yellow .triangle img {
-	max-width: 12vw;
-}
-
-.yellow .square img  {
-	max-width: 20vw;
+section.yellow div.square {
+	background-color: #74429B ;
+	top: 150px;
+	left: 300px;
 }
 
 section.orange {
@@ -258,38 +165,20 @@ section.orange {
 	height: 440px;
 }
 
+section.orange div.circle {
+	background-color: #EB731D ;
+	bottom: 300px;
+	right: 100px;
+}
+
 .orange .hero {
-	max-width: 27vw;
+	max-width: 400px;
 }
 
-
-.orange div .circle {
-	position: absolute;
-	bottom: 10%;
-	right: -40%;
-}
-
-.orange div .square{
-	position: absolute;
-	top: 0%;
-	left: -50%;
-}
-
-.orange div .triangle {
-	position: absolute;
-	bottom: -20%;
-}
-
-.orange .circle img  {
-	max-width: 18vw;
-}
-
-.orange .triangle img {
-	max-width: 18vw;
-}
-
-.orange .square img  {
-	max-width: 18vw;
+section.orange div.square {
+	background-color: #0C8EDE ;
+	top: 250px;
+	left: 50px;
 }
 
 section.purple {
@@ -297,37 +186,20 @@ section.purple {
 	height: 330px;
 }
 
+section.purple div.circle {
+	background-color: #74429B ;
+	bottom: 30px;
+	right: 180px;
+}
+
+section.purple div.square {
+	background-color: #F9D518 ;
+	top: 10px;
+	left: 140px;
+}
+
 .purple .hero {
-	max-width: 25vw;
-}
-
-.purple div .circle {
-	position: absolute;
-	bottom: 10%;
-	left: -40%;
-}
-
-.purple div .square{
-	position: absolute;
-	top: 20%;
-	right: -60%;
-}
-
-.purple div .triangle {
-	position: absolute;
-	bottom: -20%;
-}
-
-.purple .circle img  {
-	max-width: 16vw;
-}
-
-.purple .triangle img {
-	max-width: 16vw;
-}
-
-.purple .square img  {
-	max-width: 16vw;
+	max-width: 300px;
 }
 
 div.progress {

@@ -42,6 +42,7 @@ const images = [
 ]
 
 let i = 0
+const collage = document.querySelector("section.collage")
 
 function placeImage(x, y) {
   const nextSrc = images[i]
@@ -52,6 +53,7 @@ function placeImage(x, y) {
 
   img.style.left = x + 'px'
   img.style.top = y + 'px'
+  img.style.zIndex = "-1"
   img.style.transform =
     'translate(-50%, -50%) scale(0.5) rotate(' + (Math.random() * 20 - 10) + 'deg)'
 
@@ -63,16 +65,12 @@ function placeImage(x, y) {
   }
 }
 
-document.querySelector("section.collage").addEventListener("click", function () {
+document.addEventListener('click', function(event) {
   event.preventDefault()
   placeImage(event.pageX, event.pageY)
-
-
 })
 
-document.querySelector("section.collage").addEventListener("click", function () {
+document.addEventListener('touchend', function(event) {
   event.preventDefault()
   placeImage(event.pageX, event.pageY)
-
-
 })

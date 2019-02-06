@@ -10,7 +10,7 @@ const headerTag = document.querySelector("header")
 
 document.addEventListener("scroll" , function () {
 
-  const pixels = Math.floor((window.pageYOffset / 5000) * 100)
+  const pixels = Math.floor((window.pageYOffset / 5420) * 100)
 
   console.log(pixels)
 

@@ -1,11 +1,19 @@
 
-img {
+section.collage img {
   position: fixed;
   top: 200px;
   left: 200px;
   transform: translate(-50%, -50%) scale(0.5);
   animation: fadein 0.5s;
   max-width: 500px;
+}
+
+section.collage {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 @keyframes fadein {
@@ -17,18 +25,13 @@ header {
 	position: fixed;
 	top: 36px;
 	left:36px;
+  z-index: 1;
 }
 
-section.collage {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
 
-.button a {
+a {
+  position: relative;
   text-decoration: none;
   color: #333333;
-  z-index: 6;
+  z-index: 2;
 }
