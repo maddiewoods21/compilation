@@ -1,0 +1,129 @@
+@font-face {
+  font-family: Ibm Plex Mono;
+  src: url(ibm-plex-mono.woff);
+}
+@font-face {
+  font-family: Youngserif;
+  src: url(youngserif.woff);
+}
+
+body {
+  font-family: Ibm Plex Mono;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #2a2a2a;
+  overflow-x: hidden;
+}
+
+nav {
+  font-family: Youngserif;
+  font-size: 24px;
+
+
+  position: fixed ;
+  top: 0;
+  left: 0;
+  width: 240px;
+  height: 100vh;
+  background-color: #00b98d;
+  color: #ffffff;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+
+nav a {
+  text-decoration: none;
+  color: #ffffff;
+  margin: 5px 32px 5px 32px;
+}
+
+main {
+  position: relative;
+  z-index: 1;
+  background: #ffffff;
+  min-height: 100vh;
+  transition: transform .5s;
+}
+
+a.toggle-nav {
+  text-decoration: none;
+  font-weight: 500;
+  color: #2a2a2a;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 25px;
+}
+
+a.toggle-nav img {
+  margin: -3px 5px 0 0;
+  vertical-align: middle;
+}
+
+main.open {
+  transform: translate(250px, 0px) ;
+}
+
+section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+section div {
+  width: 350px;
+}
+
+section div.content {
+margin: 0 0 0 60px;
+}
+
+h1 {
+  font-family: Youngserif;
+  font-size: 48px;
+  line-height: 1.2;
+}
+
+section p {
+  margin: 20px 0 25px 0;
+}
+
+a.button {
+  display: inline-block;
+  background-color: #00b98d;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 10px 15px 10px 15px;
+  border-radius: 3px;
+}
+
+div.slideshow {
+  height: 475px;
+  position: relative;
+}
+
+
+div.slideshow img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: transform .5s;
+}
+
+div.slideshow img:first-child {
+z-index: 1;
+}
+
+div.slideshow:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3) ;
+}
+
+@keyframes fade {
+
+  0% { opacity: 0;}
+  100% { opacity: 1;}
+}
