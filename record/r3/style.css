@@ -1,0 +1,294 @@
+body {
+	font-family: 'gascogne', serif;
+	font-size: 18px;
+	line-height: 1.2;
+	background-color: #f5e6d9;
+	color: #333333;
+	margin: 0;
+}
+
+header {
+	position: fixed;
+	top: 36px;
+	left:36px;
+}
+
+.button {
+	font-size: 18px;
+	line-height: 4;
+	font-weight: bold;
+	text-align: center;
+	position: fixed;
+	width: 75px;
+	height: 75px;
+	border-radius: 50%;
+	top: 75px;
+	right: 50px;
+	transform: rotate(25deg);
+	border: solid 1px #333333;
+	}
+
+	.button a {
+
+		text-decoration: none;
+		color: #333333;
+		z-index: 6;
+	}
+
+section {
+	height: 1140px;
+	background-color: #f5e6d9;
+	padding: 80px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+div.content {
+	position: relative;
+}
+
+.hero {
+	max-width: 675px;
+}
+
+.mini {
+	max-width: 20vw;
+}
+
+.mini.left {
+	position: absolute;
+	left: 50px;
+	bottom:100px;
+}
+
+.mini.right {
+	position: absolute;
+	right: 50px;
+	top:200px;
+}
+
+div.square {
+	width:100px;
+	height:100px;
+	background-color: #F42626;
+
+	position: absolute;
+	top: 250px;
+	left: 170px;
+}
+
+div.circle {
+	width:100px;
+	height:100px;
+	background-color: #276145;
+	border-radius: 50%;
+
+	position: absolute;
+	bottom: 150px;
+	right: 200px;
+}
+
+
+div.content img.hero {
+	position: relative;
+}
+
+section.blue {
+	background-color: #c5c5c5;
+	height: 1080px;
+}
+
+section.blue div.circle {
+	background-color: #0C8EDE;
+}
+
+section.blue div.square {
+	background-color: #EB731D;
+	top: 180px;
+	left: 180px;
+}
+
+section.pink {
+	background-color: #292121;
+	height: 970px;
+}
+
+section.pink div.circle {
+	background-color: #E04E94 ;
+	bottom: 200px;
+	right: 480px;
+}
+
+section.pink div.square {
+	background-color: #93BB51;
+	top: 120px;
+	left: 350px;
+}
+
+section.red {
+	background-color: #f3f1f2;
+	height: 760px;
+}
+
+section.red div.circle {
+	background-color: #F42626;
+	bottom: 0px;
+	right: 150px;
+}
+
+section.red div.square {
+	background-color: #276145 ;
+	top: 80px;
+	left: 50px;
+}
+
+.red .hero {
+	max-width: 600px;
+}
+
+section.yellow {
+	background-color: #g3g4g2;
+	height: 700px;
+}
+
+section.yellow div.circle {
+	background-color: #F9D518 ;
+	bottom: 0px;
+	right: 200px;
+}
+
+.yellow .hero {
+	max-width: 450px;
+}
+
+section.yellow div.square {
+	background-color: #5982a0 ;
+	top: 150px;
+	left: 300px;
+}
+
+section.orange {
+	background-color: #f3ffe2;
+	height: 440px;
+}
+
+section.orange div.circle {
+	background-color: #EB731D ;
+	bottom: 300px;
+	right: 100px;
+}
+
+.orange .hero {
+	max-width: 400px;
+}
+
+section.orange div.square {
+	background-color: #0C8EDE ;
+	top: 250px;
+	left: 50px;
+}
+
+section.purple {
+	background-color: #6e5f67;
+	height: 330px;
+}
+
+section.purple div.circle {
+	background-color: #74429B ;
+	bottom: 30px;
+	right: 180px;
+}
+
+section.purple div.square {
+	background-color: #F9D518 ;
+	top: 10px;
+	left: 140px;
+}
+
+.purple .hero {
+	max-width: 300px;
+}
+
+div.progress {
+	position: fixed;
+	top: 0;
+	left:0;
+	width:0%;
+	height:5px;
+	background-color: #333333;
+	z-index:1;
+}
+
+
+/* img {
+  position: fixed;
+  top: 200px;
+  left: 200px;
+  transform: translate(-50%, -50%) scale(0.5);
+  animation: fadein 0.5s;
+  max-width: 500px;
+}
+
+@keyframes fadein {
+  0% { opacity: 0; }
+  100% { opacity: 1;}
+} */
+
+
+@font-face {
+    font-family: 'gascogne';
+    src: url('fonts/gascogne_ts_bold-webfont.woff2') format('woff2'),
+         url('fonts/gascogne_ts_bold-webfont.woff') format('woff');
+    font-weight: 800;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'gascogne';
+    src: url('fonts/gascogne_ts_demibold-webfont.woff2') format('woff2'),
+         url('fonts/gascogne_ts_demibold-webfont.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'gascogne';
+    src: url('fonts/gascogne_ts_extrabold-webfont.woff2') format('woff2'),
+         url('fonts/gascogne_ts_extrabold-webfont.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'gascogne';
+    src: url('fonts/gascogne_ts_extralight-webfont.woff2') format('woff2'),
+         url('fonts/gascogne_ts_extralight-webfont.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'gascogne';
+    src: url('fonts/gascogne_ts_light-webfont.woff2') format('woff2'),
+         url('fonts/gascogne_ts_light-webfont.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'gascogne';
+    src: url('fonts/gascogne_ts_medium-webfont.woff2') format('woff2'),
+         url('fonts/gascogne_ts_medium-webfont.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'gascogne';
+    src: url('fonts/gascogne_ts_regular-webfont.woff2') format('woff2'),
+         url('fonts/gascogne_ts_regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}

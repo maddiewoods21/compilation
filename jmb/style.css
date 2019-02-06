@@ -1,0 +1,284 @@
+/* blue #30A1D9
+green #63933b rgba(99, 147, 59, 0.8)
+purple ##39348c  */
+
+body {
+	font-family: Helvetica;
+	font-size: 18px;
+	background-color: #30a1d9;
+	color: #333333;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+main {
+  transform: rotate(45deg);
+  position: absolute;
+  top: -200px;
+  right: 100px ;
+}
+
+.top {
+  display: flex;
+  flex-direction: row;
+  transform: translateY(100px) translateX(100px);
+}
+
+.top div {
+  margin: 0 10px 0 10px;
+  background-color: #3b933f;
+  opacity: 0.9;
+}
+
+.bottom {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  transform: translateY(-100px) translateX(450px);
+}
+
+.bottom div {
+  margin: 0 10px 0 10px;
+  background-color: #39348c;
+  opacity: 0.8;
+  z-index: 1;
+}
+
+
+.text {
+  transform: translateY(-80px) translateX(-170px) ;
+}
+
+.title h1 {
+  width: 100%;
+  font-size: 48px;
+  line-height: 1;
+  font-weight: 600;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.sub {
+	display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: -35px ;
+}
+
+.musicians {
+  width: 400px;
+  margin-right:10px;
+}
+
+.musicians h1 {
+  font-size: 48px;
+  text-align: right;
+  line-height: 1.25;
+}
+
+.copy {
+  width: 400px;
+  margin-left:10px;
+}
+
+.copy p {
+  margin-bottom: 10px;
+}
+
+.copy .columns {
+  column-count: 2;
+}
+
+
+@media (min-width:1900px) {
+
+.top div {
+ 	width: 20vmax;
+  height: 20vmax;
+}
+
+.bottom div {
+  width: 28vmax;
+  height: 28vmax;
+}
+
+}
+
+@media (max-width:1900px) {
+
+  .top div {
+ 	width: 20vmax;
+  height: 20vmax;
+}
+
+.bottom div {
+  width: 28vmax;
+  height: 28vmax;
+}
+
+main {
+
+  top: -200px;
+  right: 100px ;
+
+}
+
+  .sub,
+  .title h1 {
+	transform: translateX(150px) ;
+}
+
+}
+
+@media (max-width:1600px) {
+
+  main {
+    top: -100px;
+    right: 150px ;
+  }
+
+  body {
+    font-size: 14px;
+  }
+
+  .musicians h1, .title h1 {
+    font-size: 36px;
+  }
+
+  .top {
+    transform: translateY(50px) translateX(100px);
+  }
+
+
+}
+
+
+/*  * ----------------------------------------
+ * animations
+ * ---------------------------------------- */
+
+.tracking-in-expand {
+	-webkit-animation: tracking-in-expand 1s ease-in-out 0.5s both;
+	        animation: tracking-in-expand 1s ease-in-out 0.5s both;
+}
+
+@-webkit-keyframes tracking-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes tracking-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.slide-in-left {
+	-webkit-animation: slide-in-left 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-in-left 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@-webkit-keyframes slide-in-left {
+  0% {
+    -webkit-transform: translateX(-1000px);
+            transform: translateX(-1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-in-left {
+  0% {
+    -webkit-transform: translateX(-1000px);
+            transform: translateX(-1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+
+.slide-in-right {
+	-webkit-animation: slide-in-right 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s both;
+	        animation: slide-in-right 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s both;
+}
+
+@-webkit-keyframes slide-in-right {
+  0% {
+    -webkit-transform: translateX(1000px);
+            transform: translateX(1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: .75;
+  }
+}
+@keyframes slide-in-right {
+  0% {
+    -webkit-transform: translateX(1000px);
+            transform: translateX(1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: .75;
+  }
+}
+
+.tracking-in-contract {
+	-webkit-animation: tracking-in-contract 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+	        animation: tracking-in-contract 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+
+@-webkit-keyframes tracking-in-contract {
+  0% {
+    letter-spacing: 1em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    letter-spacing: normal;
+    opacity: 1;
+  }
+}
+@keyframes tracking-in-contract {
+  0% {
+    letter-spacing: 1em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    letter-spacing: normal;
+    opacity: 1;
+  }
+}

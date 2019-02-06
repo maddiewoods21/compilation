@@ -1,10 +1,10 @@
-$(function(){
-    $("button").on({
-        mouseover:function(){
-            $(this).css({
-                left:(Math.random()*250)+"px",
-                bottom:(Math.random()*250)+"px",
-            });
-        }
-    });
+$(function (){
+
+	$(window).mousemove(function(event) {
+		$('#mouse-pointer').css({
+			'top' : event.pageY + 'px',
+			'left' : event.pageX + 'px'
+		});
+	});
+
 });

@@ -1,66 +1,80 @@
-@font-face {
-    font-family: 'Bluunext';
-    src: url(/Users/madelinewoods/Documents/RISD/2018_2019/winter_session/projects/de-design/webfonts/bluunext-bold-webfont.woff) ;
-}
-
-
 body {
-	font-family: Bluunext;
-	line-height: 1.2;
-  color: #000000;
-
-  height: 100vh;
-
-  background-color: #faffb8;
-  background-image: linear-gradient(180deg, #ffffff, rgba(255, 255, 255,0) );
-  background-size: cover;
-}
-
-section {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 50%;
-  text-align: center;
+font-family: "Source Sans Pro";
+width:80vw;
+margin: 100px auto;
+font-style: italic;
+  font-weight: 900;
+  overflow: hidden;
 }
 
 h1 {
-	font-size: 24px;
-	font-weight: 700;
-  margin: -10px;
+  font-size: 48px;
 }
 
 h2 {
-  font-size: 10vmin;
+  margin-top: -30px;
+  font-size: 24px;
+}
+
+em {
+  text-decoration: underline;
+}
+
+.one {
+    float: left;
+    background-color: rbga(0,0,0,0);
+}
+
+.two {
+    float: right;
+    background-color: rbga(0,0,0,0);
+}
+
+.bumper {
+    position: absolute;
+    top: 200px;
+    left: 100px;
+    padding: 50px;
+    overflow: auto;
+    /* outline: 1px solid red; */
+    transition: all 0.3s ease-out;
 }
 
 
-button {
-      position:absolute;
-      text-transform: uppercase;
-      font-family: 'PT Sans', sans-serif;
-      background-color: #b472e6;
-      margin: 100 auto;
-    	padding: 0;
-    	width: 225px;
-    	height: 50px;
-    	border-radius: 40px;
-    	letter-spacing: 1px;
-    	font-size: 16px;
-      font-weight: bold;
-      color: white ;
-  }
+.bumperTwo {
+    position: absolute;
+    top: 500px;
+    left: 100px;
+    padding: 50px;
+    overflow: auto;
+    /* outline: 1px solid blue; */
+    transition: all 0.3s ease-out;
+}
+
+.bumperThree {
+    position: absolute;
+    top: 75px;
+    left: 100px;
+    padding: 80px;
+    overflow: hidden;
+    outline: 1px solid yellow;
+}
 
 
-div.button {
+img {
+  max-height: 200px;
+  margin:5px;
+}
 
-  position: fixed;
-  bottom: 300px;
-  width: 100%;
-  /* padding: 30px; */
-  display: flex;
-  justify-content: center;
-  align-items: center;
+* {
+	cursor: none;
+}
 
+figure#mouse-pointer {
+	background-image: url('/Users/madelinewoods/Documents/RISD/2018_2019/winter_session/compilation/de-design/fishing-pole-and-fish_1f3a3.png');
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	margin: -25px;
+	display: block;
 }
