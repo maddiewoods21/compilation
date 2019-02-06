@@ -220,7 +220,7 @@ div.projects {
   color: #630C45 ;
 }
 
-.projects a , .exercises a , .processes a {
+.projects a , .exercises a , .processes a  {
   text-decoration: none;
 }
 
@@ -248,6 +248,10 @@ div.bio {
   font-size: 28px;
   font-weight: 500;
   margin-top: -5px;
+}
+
+.bio p a {
+  color: #363738;
 }
 
 main {
@@ -404,6 +408,7 @@ p.first {
   font-style: italic;
   color: #102F11;
 }
+
 
 
 @media only screen and (max-width: 1100px) {
