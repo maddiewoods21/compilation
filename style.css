@@ -59,24 +59,23 @@ header h2 {
 }
 
 .subject div {
-  height: 25vh;
+  height: 20vh;
   width: 100vw;
   text-align: center;
   box-shadow: 0 -5px 5px -5px rgba(0, 0, 0, 0.3);
-
-
 }
 
 .subject a {
-  font-size: 15vh;
+  font-size: 14vh;
+  line-height: 1.5;
   font-weight: 200;
-  transition: letter-spacing 0.2s ease-in;
+  transition: all 0.2s ease-in;
   text-decoration: none;
   display: block;
   width: 100vw;
-  height: 25vh;
+  height: 20vh;
   background-color: #DEDDDD;
-  line-height: 1.6;
+
   position: fixed;
   box-shadow: 0 -5px 5px -5px rgba(0, 0, 0, 0.3);
   border-bottom: 1px solid black;
@@ -84,6 +83,8 @@ header h2 {
 
 .subject a:hover {
   letter-spacing: .2rem;
+  height: 22vh;
+
 }
 
 .project a {
@@ -113,6 +114,15 @@ header h2 {
   background-color: #102F11;
 }
 
+.process a {
+  color: #6B4A0B;
+}
+
+.process a:hover {
+  color: #DEDDDD;
+  background-color: #6B4A0B;
+}
+
 .about a {
   color: #363738;
 }
@@ -138,7 +148,7 @@ a.top-right {
   z-index:1;
   font-size: 1.2rem;
   text-decoration: none;
-  color:#F1EFEC;
+  color:#333333;
 }
 
 a.bottom-left {
@@ -150,7 +160,30 @@ a.bottom-left {
   z-index:1;
   font-size: 1.2rem;
   text-decoration: none;
-  color:#F1EFEC;
+  color:#333333;
+}
+
+
+div.processes {
+  position: fixed;
+  top: 25vh;
+  margin-right: 18vw;
+  margin-left: 5%;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.process-header h2 , .processes p {
+color: #6B4A0B
+}
+
+.process h3 {
+    font-size: 24px;
+    font-weight: 500;
+    color: #630C45 ;
 }
 
 
@@ -187,7 +220,7 @@ div.projects {
   color: #630C45 ;
 }
 
-.projects a , .exercises a {
+.projects a , .exercises a , .processes a {
   text-decoration: none;
 }
 
@@ -304,7 +337,6 @@ div.exercises {
   color: #132657;
 }
 
-
 div.responses {
   position: fixed;
   top: 25vh;
@@ -371,7 +403,6 @@ p.first {
   line-height: 1.4;
   font-style: italic;
   color: #102F11;
-
 }
 
 
@@ -412,10 +443,10 @@ p.first {
     margin-right: 10vw;
   }
 
-  .exercises h3 , .projects h3 , .responses h3 , .responses h3 em {
+  .exercises h3 , .projects h3 , .responses h3 , .responses h3 em , .processes h3 {
     font-size: 24px;
   }
-  .exercise-header h2 , .projects-header h2 , .reading-header  {
+  .exercise-header h2 , .projects-header h2 , .reading-header , .process-header  {
     font-size: 48px;
   }
   .sliders div h4 a {
@@ -462,8 +493,8 @@ p.first {
 @media only screen and (max-width: 800px) {
 
   .subject a {
-    font-size: 12.5vh;
-    line-height: 2;
+    font-size: 12vh;
+    line-height: 1.6;
   }
 
   a.top-left img {
@@ -489,7 +520,7 @@ p.first {
     margin-right: 4vw;
   }
 
-  div.exercises , div.projects , div.bio , div.responses {
+  div.exercises , div.projects , div.bio , div.responses , div.processes {
     top: 16vh;
   }
 
@@ -507,11 +538,11 @@ p.first {
       display:none;
   }
 
-  .exercises h3 , .projects h3 , .responses h3 , .responses h3 em {
+  .exercises h3 , .projects h3 , .responses h3 , .responses h3 em , .processes h3 {
     font-size: 24px;
   }
 
-  .exercise-header h2 , .projects-header h2 , .reading-header {
+  .exercise-header h2 , .projects-header h2 , .reading-header , process-header h2 {
     font-size: 32px;
   }
 
@@ -543,7 +574,7 @@ p.first {
 
   .subject a {
     font-size: 10vh;
-    line-height: 2.5;
+    line-height: 2;
   }
 
     body.special-height {
@@ -555,7 +586,7 @@ p.first {
       height: 250vw;
     }
 
-    .projects div , .projects img {
+  .projects div , .projects img {
       width: 38vw;
       margin-right: 3vw;
     }
@@ -591,11 +622,11 @@ p.first {
         display:none;
     }
 
-  .exercises h3 , .projects h3 , .responses h3 , .responses h3 em {
+  .exercises h3 , .projects h3 , .responses h3 , .responses h3 em , .processes h3 {
     font-size: 20px;
   }
 
-  .exercise-header h2 , .projects-header h2 , .reading-header , header h2 {
+  .exercise-header h2 , .projects-header h2 , .reading-header , header h2 , .process-header h2 {
     font-size: 32px;
   }
 
@@ -631,7 +662,7 @@ p.first {
 
   .subject a {
     font-size: 8vh;
-    line-height: 3;
+    line-height: 2.5;
   }
 
   a.top-left img {
@@ -661,10 +692,10 @@ p.first {
     top: 16vh;
   }
 
-  .exercises h3 , .bio h3 , .responses h3 , .responses h3 em {
+  .exercises h3 , .bio h3 , .responses h3 , .responses h3 em , .processes h3 {
     font-size: 22px;
   }
-.exercise-header h2 , .projects-header h2 , header h2 , .reading-header {
+.exercise-header h2 , .projects-header h2 , header h2 , .reading-header , .process-header h2 {
     font-size: 30px;
   }
 
@@ -717,7 +748,6 @@ p.first {
 }
 
 
-
 }
 
 @media only screen and (max-width: 405px) {
@@ -741,7 +771,7 @@ p.first {
   width: 6%;
   }
 
-  .exercise-header h2 , .projects-header h2 , header h2  {
+  .exercise-header h2 , .projects-header h2 , header h2 , process-header h2  {
     font-size: 32px;
     line-height: 1;
   }
@@ -772,7 +802,7 @@ p.first {
     font-size: 24px;
 }
 
-  div.exercises , div.projects , div.bio , div.responses {
+  div.exercises , div.projects , div.bio , div.responses , div.processes {
     top: 16vh;
   }
 
@@ -810,9 +840,8 @@ p.first {
 }
 
 .sliders {
-  bottom: 0.25px;
+  bottom: 0.2px;
 }
-
 
 .project a {
   color: #DEDDDD;
@@ -842,6 +871,11 @@ p.first {
 .reading a:hover {
   color: #DEDDDD;
   background-color: #102F11;
+}
+
+.process a {
+  color: #DEDDDD;
+  background-color: #6B4A0B;
 }
 
 .about a {
