@@ -178,7 +178,6 @@ section.pink {
 }
 
 
-
 section.red {
 	background-color: #6e5f67;
 	height: 680px;
@@ -353,20 +352,152 @@ div.progress.white {
 	background-color: #ffffff;
 }
 
+@media (max-width: 1200px) {
 
-/* img {
-  position: fixed;
-  top: 200px;
-  left: 200px;
-  transform: translate(-50%, -50%) scale(0.5);
-  animation: fadein 0.5s;
-  max-width: 500px;
+	section.green {
+		height: 80vh;
+	}
+
+	section.blue {
+		height: 75vh;
+	}
+
+	section.pink {
+		height: 70vh;
+	}
+
+	section.red {
+		height: 65vh;
+	}
+
+	section.yellow{
+		height: 55vh;
+	}
+
+	section.orange{
+		height: 50vh;
+	}
+
+	section.purple{
+		height: 40vh;
+	}
 }
 
-@keyframes fadein {
-  0% { opacity: 0; }
-  100% { opacity: 1;}
-} */
+@media (max-width: 1000px) {
+
+	header {
+		font-size: 20px;
+	}
+	.hero {
+		max-width: 50vh;
+	}
+
+
+
+	.green .circle img  {
+		max-width: 14vh;
+	}
+
+	.green .triangle img {
+		max-width: 20vh;
+	}
+
+	.green .square img  {
+		max-width: 28vh;
+	}
+
+	.green div .circle {
+		position: absolute;
+		bottom: 10%;
+		right: 10%;
+	}
+
+	.green div .square{
+		position: absolute;
+		top: -15%;
+		left: 0;
+	}
+
+	.green div .triangle {
+		position: absolute;
+		bottom: -40%;
+	}
+
+	.blue div .circle {
+		position: absolute;
+		top: -35%;
+		right: 0;
+	}
+
+	.blue div .square{
+		position: absolute;
+		bottom: 40%;
+		left: -10%;
+	}
+
+	.blue div .triangle {
+		position: absolute;
+		right: 20%;
+		bottom: 0%;
+	}
+
+	.blue div .rect {
+	position: absolute;
+	left: -10%;
+	bottom: -20%	;
+	}
+
+
+	.blue .circle img  {
+		max-width: 20vh;
+	}
+
+	.blue .triangle img {
+		max-width: 20vh;
+	}
+
+	.blue .square img  {
+		max-width: 20vh;
+	}
+
+	.blue .rect img {
+		max-width: 20vh;
+	}
+
+
+	.pink div .circle {
+		position: absolute;
+		top: -10%;
+		left: 0%;
+	}
+
+	.pink div .square{
+		position: absolute;
+		bottom: -25%;
+		right: 0%;
+	}
+
+	.pink div .triangle {
+		position: absolute;
+		right: 20%;
+		bottom: 0%;
+	}
+
+	.pink .circle img  {
+		max-width: 20vh;
+	}
+
+	.pink .triangle img {
+		max-width: 20vh;
+	}
+
+	.pink .square img  {
+		max-width: 20vh;
+	}
+
+
+}
+
 
 
 @font-face {
