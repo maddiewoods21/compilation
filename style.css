@@ -169,7 +169,7 @@ div.projects {
 .projects div ,
 
 .projects img {
-  width: 18vw;
+  width: 16vw;
   margin-right: 1.5vw;
 }
 
@@ -177,13 +177,18 @@ div.projects {
   margin-right: 0;
 }
 
-.projects-header h2, .projects h3, .projects p {
+.projects-header h2, .projects p {
   color: #630C45 ;
 }
 
 .projects h3 {
   font-size: 24px;
   font-weight: 500;
+  color: #630C45 ;
+}
+
+.projects a , .exercises a {
+  text-decoration: none;
 }
 
 div.bio {
@@ -365,6 +370,8 @@ p.first {
   font-size: 16px;
   line-height: 1.4;
   font-style: italic;
+  color: #102F11;
+
 }
 
 
