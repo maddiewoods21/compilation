@@ -14,7 +14,7 @@ document.addEventListener("scroll" , function () {
 
   console.log(pixels)
 
-  scrollTag.innerHTML = pixels + " %"
+  scrollTag.innerHTML = pixels + "%"
 
 })
 
