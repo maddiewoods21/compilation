@@ -27,3 +27,13 @@ var pixels = $(document).scrollTop()
 $('div.projects').css('left' , -0.75 * pixels)
 
 })
+
+//process page
+
+$(document).on('scroll', function () {
+
+var pixels = $(document).scrollTop()
+
+$('div.processes').css('left' , -0.75 * pixels)
+
+})

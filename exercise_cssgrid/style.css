@@ -1,0 +1,188 @@
+body {
+  font-family: Playfair;
+  font-size: 20px;
+  line-height: 1.3;
+  background-color: #f4f4f4;
+  color: #000;
+}
+
+header {
+  background-color: black;
+  border-top: solid 5px #FEEA34;
+}
+
+header .wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  width: 75px;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+.wrap {
+  max-width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 15px;
+}
+
+.hero {
+  background-image: url(banner.jpg);
+  padding-top: 100px;
+  padding-bottom: 120px;
+  background-size: cover;
+  background-position: right bottom;
+  margin-bottom: 15px;
+}
+
+.hero h2 {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 25px;
+  line-height: 1.2;
+  font-family: Playfair;
+}
+
+.hero p {
+  font-size: 24px;
+  line-height: ;
+}
+
+.intro {
+  max-width: 450px ;
+}
+
+.filters a {
+  font-size: 16px;
+  margin-right: 15px;
+}
+
+.filters {
+  margin-bottom: 10px;
+}
+
+.filters .selected {
+  font-weight: 700;
+  border-bottom: solid 3px #FEEA34;
+  padding-bottom: 1px;
+}
+
+.products .wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.products {
+  margin-bottom: 75px;
+}
+
+.product {
+  width: 33.333%;
+  position: relative;
+}
+
+.overlay {
+  opacity: 0;
+  position: absolute;
+  background-color: #FEEA34;
+  width: 100%;
+  height: 100%;
+  left:0;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: opacity 0.3s ease-out;
+  padding: 15px;
+}
+
+.product:hover .overlay {
+  opacity: .75;
+}
+
+.overlay h4 {
+  font-family: Playfair;
+  text-transform: none;
+  font-weight: 900;
+  font-size: 18px;
+  color: #000;
+
+}
+
+.overlay p {
+  font-weight: 900;
+  font-size: 36px;
+  margin-bottom: 0;
+
+}
+
+@media (max-width: 900px) {
+  .hero {
+    padding-top:60px;
+    padding-bottom:50px;
+  }
+
+  .product {
+    width: 50%;
+  }
+
+  .wrap {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+}
+
+@media (max-width: 760px) {
+
+.hero {
+background-image: none;
+background-color: lightgrey;
+padding-top:30px;
+padding-bottom: 25px;
+}
+
+.intro {
+max-width: none;
+  }
+
+}
+
+@media (max-width:540px){
+
+  .intro h2 {
+font-size:18px;
+margin-bottom: 10px;
+
+  }
+
+  .intro p {
+    font-size: 16px;
+  }
+
+.wrap {
+
+  padding-left: 20px;
+  padding-right: 20px;
+
+}
+
+}
+
+@media (max-width:460px){
+  body {
+    font-size:16px;
+  }
+
+  .product {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
