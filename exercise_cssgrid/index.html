@@ -2,17 +2,17 @@
 <html>
 
 <html lang="en" dir="ltr">
-  <head>
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
+
     <title>Exercise: CSS Grid</title>
 
-  <link rel="stylesheet" href="superhi.css"/>
-  <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="superhi.css"/>
+    <link rel="stylesheet" href="style.css"/>
 
-  <script type="text/javascript" src="jquery-3.3.1.js"></script>
-  <script type="text/javascript" src="overlap.js"></script>
-
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript" src="main.js"></script>
 </head>
 
 <body>
@@ -45,10 +45,12 @@
 
  <nav class="filters">
   	<div class="wrap">
-      <a href="#" class="filters">Show Filters</a>
-   	 <a href="index.html" class="selected">Bandanas</a>
-   	 <a href="#">Accesories</a>
-     <a href="#">All</a>
+      <a href="#" class="show-filters">Show Filters</a>
+      <ul class="filters-list">
+   	   <li><a href="index.html" class="selected">Bandanas</a>   </li>
+   		 <li> <a href="#">Accesories</a>   </li>
+     	 <li><a href="#">All</a>   </li>
+      </ul>
  	 </div>
  </nav>
 

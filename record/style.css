@@ -392,8 +392,6 @@ div.progress.white {
 		max-width: 50vh;
 	}
 
-
-
 	.green .circle img  {
 		max-width: 14vh;
 	}
@@ -494,6 +492,78 @@ div.progress.white {
 	.pink .square img  {
 		max-width: 20vh;
 	}
+
+	.red .hero {
+		max-width: 40vh;
+	}
+
+	.red div .circle {
+		position: absolute;
+		top: 25%;
+		left: -25%;
+	}
+
+	.red div .square{
+		position: absolute;
+		bottom: 0%;
+		right: -20%;
+	}
+
+	.red div .triangle {
+		position: absolute;
+		right: -25%;
+		bottom: 50%;
+	}
+
+	.red .circle img  {
+		max-width: 22vh;
+	}
+
+	.red .triangle img {
+		max-width: 22vh;
+	}
+
+	.red .square img  {
+		max-width: 22vh;
+	}
+
+	.red .rect img  {
+		max-width: 24vh;
+	}
+
+	.yellow .hero {
+		max-width: 35vh;
+	}
+
+	.yellow div .circle {
+		position: absolute;
+		bottom: 10%;
+		right: -40%;
+	}
+
+	.yellow div .square{
+		position: absolute;
+		top: -20%;
+		left: -25%;
+	}
+
+	.yellow div .triangle {
+		position: absolute;
+		bottom: -30%;
+	}
+
+	.yellow .circle img  {
+		max-width: 18vh;
+	}
+
+	.yellow .triangle img {
+		max-width: 18vh;
+	}
+
+	.yellow .square img  {
+		max-width: 18vh;
+	}
+
 
 
 }

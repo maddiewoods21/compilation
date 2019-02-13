@@ -64,6 +64,10 @@ a {
   margin-right: 15px;
 }
 
+.filters li {
+  display: inline;
+}
+
 .filters {
   margin-bottom: 10px;
 }
@@ -72,6 +76,11 @@ a {
   font-weight: 700;
   border-bottom: solid 3px #FEEA34;
   padding-bottom: 1px;
+}
+
+.show-filters {
+  display: none;
+  color: lightgrey;
 }
 
 .products .wrap {
@@ -99,7 +108,7 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  transition: opacity 0.3s ease-out;
+  transition: opacity 0.5s cubic-bezier(0.65, 0.05, 0.36, 1);
   padding: 15px;
 }
 
@@ -185,4 +194,20 @@ margin-bottom: 10px;
     width: 100%;
     margin-bottom: 20px;
   }
+
+  .show-filters  {
+    display: block;
+    margin-bottom: 5px;
+  }
+
+  .filters li {
+    margin-bottom: 3px;
+    display: block;
+  }
+
+  .filters-list {
+    display:none;
+  }
+
+
 }
